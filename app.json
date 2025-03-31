@@ -4,7 +4,7 @@
     "slug": "Spendly",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/logo.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,9 +13,10 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/images/splash.png",
+        "backgroundColor": "#171717"
+      },
+      "package": "com.hari_prasad_singh.Spendly"
     },
     "web": {
       "bundler": "metro",
@@ -27,15 +28,24 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "image": "./assets/images/splash.png",
+          "resizeMode": "cover",
+          "enableFullScreenImage_legacy": true,
+          "backgroundColor": "#171717"
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "d78ca046-0dea-4f63-a7c7-005c68e96d06"
+      }
+    },
+    "owner": "hari_prasad_singh"
   }
 }
